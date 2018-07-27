@@ -1,6 +1,5 @@
 # Python 이민 수난기
-### dJango를 써보즈ㅏㅏㅏㅏ
-
+## dJango를 써보즈ㅏㅏㅏㅏ
 
 1. 가상환경 생성하기
 ```
@@ -31,3 +30,19 @@ pip install django~=[version]
 ```
 django-admin startproject [Project_name] [Directory_path]
 ```
+5. settings.py 변경하기
+```
+# Project 폴더 내에서 settings.py 를 찾아서 변경하세요
+
+# 시간대 변경
+TIME_ZONE = 'Asia/Seoul'
+
+# 정적파일 경로
+STATUC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+# 호스트 정보, Public IP 입력
+ALLOWED_HOSTS = ['[Public IP]']
+```
+
+6. DB 설정
